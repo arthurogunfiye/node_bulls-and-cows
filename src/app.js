@@ -1,16 +1,9 @@
 /* eslint-disable no-console */
 'use strict';
 import readline from 'node:readline';
-
-const { checkIsValidUserInput } = await import(
-  './modules/checkIsValidUserInput.js'
-);
-
-const { getBullsAndCows } = await import('./modules/getBullsAndCows.js');
-
-const { generateRandomNumber } = await import(
-  './modules/generateRandomNumber.js'
-);
+const { checkIsValidUserInput } = require('./modules/checkIsValidUserInput.');
+const { getBullsAndCows } = require('./modules/getBullsAndCows');
+const { generateRandomNumber } = require('./modules/generateRandomNumber');
 
 function tryAgain() {
   return terminal.question('Try again: ', (userNumber) => {

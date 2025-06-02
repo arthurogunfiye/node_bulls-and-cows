@@ -33,6 +33,4 @@ function checkIsValidUserInput(userInput) {
   return true;
 }
 
-module.exports = {
-  checkIsValidUserInput,
-};
+module.exports = { checkIsValidUserInput };

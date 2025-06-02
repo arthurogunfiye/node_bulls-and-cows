@@ -26,6 +26,4 @@ function generateRandomNumber() {
   return parseInt(result, 10);
 }
 
-module.exports = {
-  generateRandomNumber,
-};
+module.exports = { generateRandomNumber };
